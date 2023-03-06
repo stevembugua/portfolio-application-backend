@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '3.2.1'
 gem 'pry'
 gem 'rake'
 gem 'puma', '~> 6.1', '>= 6.1.1'
@@ -15,5 +15,5 @@ gem "sqlite3"
 
 
 group :development do 
-    gem 'rerun', '~> 0.14.0'
+    gem 'rerun'
 end
