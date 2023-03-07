@@ -1,16 +1,21 @@
 class Application 
-
+  # post '/user/create' do
+  #   # data = params[:password]
+  #   # data = JSON.parse(request.body.read)
+  #   begin
+  #     user = User.create(name: params[:username], email: params[:email], password: params[:password])
+  #     [201,user.to_json]
+  #   rescue => exception
+  #     [422, {
+  #       "error": exception
+  #     }.to_json]
+  #   end
+  #   # data["username"].to_json
+  
+  # end
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
-
-    if req.path.match(/check-auth/) && req.get?
-      if authenticated?
-        return [200, { 'Content-Type' => 'application/json' }, [ {:message => "User is authenticated."}.to_json ]]
-      else
-        return [401, { 'Content-Type' => 'application/json' }, [ {:error => "User is not authenticated."}.to_json ]]
-      end
-    end
     
     # projects get/read 
   if req.path.match(/projects/) && req.get? #controller interprates the request given from the front-end
