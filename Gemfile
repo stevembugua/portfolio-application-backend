@@ -15,8 +15,5 @@ gem "activerecord", "~> 5.2"
 gem "sinatra-activerecord"
 gem "sinatra"
 gem 'sqlite3', '~> 1.6', '>= 1.6.1'
+gem 'rerun', '~> 0.14.0'
 
-
-group :development do 
-    gem 'rerun', '~> 0.14.0'
-end
