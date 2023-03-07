@@ -12,7 +12,7 @@ gem "require_all"
 gem "activerecord", "~> 5.2"
 gem "sinatra-activerecord"
 gem "sinatra"
-gem "sqlite3"
+gem 'sqlite3', '~> 1.6', '>= 1.6.1'
 
 
 group :development do 
