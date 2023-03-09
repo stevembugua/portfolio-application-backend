@@ -267,4 +267,5 @@ fetch('http://localhost:9292/boards/', {
     }
 }
 ```
-
+### Licence 
+      The project is registered under MIT licence
