@@ -37,15 +37,12 @@ rake start
 - has many skills
 - has many tasks through skills
 
-### Boards
+### Skills
 
 - belongs to a project
-- has many tasks
 
-### Tasks
 
-- belongs to a skills
-- belongs to project though a skills
+
 
 ## Example Calls You Can Make With API
 
@@ -238,10 +235,10 @@ tasks: [ ]
 
 You can make all CRUD calls for the projects database.
 
-- CREATE boards
-- GET/RETRIEVE all boards
-- DELETE a board
-- UPDATE a board
+- CREATE skill
+- GET/RETRIEVE all skill
+- DELETE a skill
+- UPDATE a skill
 
 ### Example: Create a skill
 
